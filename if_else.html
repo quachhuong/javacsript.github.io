@@ -41,5 +41,25 @@
 		    }
 		}
 	</script>
+	<script type="text/javascript">
+		var point= parseInt(prompt("nhập điểm cần kiểm tra",'0'));
+		var message='';
+		if(point<5 && point>=0){
+			message='Bạn bị rớt môn';
+		}
+		else if(point>=5 && point<=6){
+			message='Bạn là học sinh trug bình';
+		}
+		else if(point>6 && point<8){
+			message='Bạn là học sinh khá';
+		}
+		else if(point>=8 && point<=10){
+			message='Bạn là học sinh giỏi';
+		}
+		else{
+			message='Bạn nhập điểm sai';
+		}
+		document.write(message);
+	</script>
 </body>
 </html>

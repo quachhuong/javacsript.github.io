@@ -81,5 +81,37 @@
 		        document.write("Màu bạn nhập không có trong hệ thống");
 		}
 	</script>
+	<script type="text/javascript">
+		//Khai báo đối tượng date
+		var date= new Date();
+		//lấy số thứ tự của ngày hiện tại
+		var current_day= date.getDay();
+		//biến lưu tên của thứ
+		var day_name='';
+		//lấy tên thứ của ngày hiện tại
+		switch(current_day){
+			case 0:
+				day_name="chủ nhật";
+				break;
+			case 1:
+				day_name="thứ hai";
+				break;
+			case 2:
+				day_name="thứ 3";
+				break;
+			case 3:
+				day_name="thứ 4";
+				break;
+			case 4:
+				day_name="thứ 5";
+				break;
+			case 5:
+				day_name="thứ 6";
+				break;
+			case 6:
+				day_name="thứ 7";
+		}
+		document.write(day_name);
+	</script>
 </body>
 </html>
