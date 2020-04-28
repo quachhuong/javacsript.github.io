@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		setTimeout(function(){
+		    alert("Chào mừng bạn đến với freetuts.net");
+		}, 3000);
+	</script>
+	<script type="text/javascript">
+		var do_alert = function(){
+		    alert("Chào mừng bạn đến với freetuts.net");
+		};
+		setTimeout(do_alert, 3000);
+	</script>
+	<script type="text/javascript">
+		// hành động
+		var action = setTimeout(function(){
+		    // something
+		}, 3000);
+		 
+		// hủy hành động
+		clearTimeout(action);
+		
+
+	</script>
+	<script type="text/javascript">
+		var do_alert = setTimeout(function(){
+	        alert("Chào mừng bạn đến với freetuts.net");
+	    }, 3000);
+	 
+	    function clearAlert()
+	    {
+	        clearTimeout(do_alert);
+	    }
+	</script>
+	<input type="button" onclick="clearAlert()" value="Clear" />
+	<script type="text/javascript">
+		setInterval(function(){
+		    alert("Chào mừng bạn đến với freetuts.net");
+		}, 3000);
+	</script>
+	<script type="text/javascript">
+		var interval_obj = setInterval(function(){
+		    alert("Chào mừng bạn đến với freetuts.net");
+		    clearInterval(interval_obj);
+		}, 3000);
+	</script>
+</body>
+</html>
